@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="Name: "
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_dark">
+    </TextView>
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: "
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/mass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mass: "
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/hair_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hair color: "
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/skin_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin Color: "
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/eye_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eye color: "
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="start|center">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
