@@ -1,10 +1,13 @@
 package com.example.star_wars_encyclopedia.view.fragments
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AbsListView
+import android.widget.TextView
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -118,9 +121,24 @@ class ListFragment : Fragment(){
 
         adapter.setOnClickListener(object : OnItemClickListener {
             override fun onClick(view: View, position: Int) {
-                onPeopleClicked(personages[position].name)
+                onPeopleClicked(adapter.personageFilterList[position].name)
             }
         })
+
+        binding.personageSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                adapter.filter.filter(newText)
+                return false
+            }
+
+        })
+
+        val textView = binding.personageSearch.findViewById<TextView>(androidx.appcompat.R.id.search_src_text)
+        textView.setTextColor(Color.WHITE)
 
         return binding.root
     }

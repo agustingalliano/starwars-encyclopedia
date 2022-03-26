@@ -12,7 +12,7 @@
         android:textSize="20sp"
         android:gravity="center"
         android:textStyle="bold|italic"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/teal_200"
         />
 
 </LinearLayout>
